@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>Carrito de Compras</title>
+    <style>
+        .product {
+            border: 1px solid #ccc;
+            padding: 16px;
+            margin: 16px;
+            text-align: center;
+        }
+        .cart {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Carrito de Compras</h1>
+    <div class="products">
+        <div class="product">
+            <h2>Biobizz World Wide Organics</h2>
+            <p>Este es un texto de apoyo para el contenido adicional.</p>
+            <button onclick="addToCart('Biobizz World Wide Organics')">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <h2>BioGreen Planet</h2>
+            <p>Este es un texto de apoyo para el contenido adicional.</p>
+            <button onclick="addToCart('BioGreen Planet')">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <h2>Bioptimal</h2>
+            <p>Este es un texto de apoyo para el contenido adicional.</p>
+            <button onclick="addToCart('Bioptimal')">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <h2>Hesi</h2>
+            <p>Este es un texto de apoyo para el contenido adicional.</p>
+            <button onclick="addToCart('Hesi')">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <h2>Aptus Plant Tech</h2>
+            <p>Este es un texto de apoyo para el contenido adicional.</p>
+            <button onclick="addToCart('Aptus Plant Tech')">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <h2>Atami</h2>
+            <p>Este es un texto de apoyo para el contenido adicional.</p>
+            <button onclick="addToCart('Atami')">Añadir al carrito</button>
+        </div>
+    </div>
+    <div class="cart">
+        <h2>Carrito</h2>
+        <ul id="cartItems"></ul>
+    </div>
+
+    <script>
+        function addToCart(productName) {
+            const cartItems = document.getElementById('cartItems');
+            const listItem = document.createElement('li');
+            listItem.textContent = productName;
+            cartItems.appendChild(listItem);
+        }
+    </script>
+</body>
+</html>
