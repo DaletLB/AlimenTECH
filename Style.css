@@ -1,1 +1,15 @@
 
+.Btn {
+    font-size: 15px;
+    margin-top: -15px;
+    padding: 20px;
+    color:rgb(255, 255, 255) ;
+    display: block;
+    border-radius: 8px;
+    border-color: white;
+
+}
+
+.Btn :hover {
+    color:rgb(4, 214, 134) ;
+}
