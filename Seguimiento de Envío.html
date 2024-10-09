@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento de Envío</title>
+    <link rel="stylesheet" href="S_producto.css">
+</head>
+<body>
+    <header>
+        <h1>Seguimiento de tu Paquete</h1>
+    </header>
+
+    <div class="tracking-code-container">
+        <label for="tracking-code">Ingresa tu código de paquete:</label>
+        <input type="text" id="tracking-code" placeholder="Código de seguimiento">
+        <button id="checkStatus">Verificar Estado</button>
+    </div>
+
+    <div class="tracking-container">
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <div class="step" id="step-1">
+            <div class="circle"></div>
+            <p>Pedido Confirmado</p>
+        </div>
+        <div class="step" id="step-2">
+            <div class="circle"></div>
+            <p>Preparando Envío</p>
+        </div>
+        <div class="step" id="step-3">
+            <div class="circle"></div>
+            <p>Enviado</p>
+        </div>
+        <div class="step" id="step-4">
+            <div class="circle"></div>
+            <p>En Tránsito</p>
+        </div>
+        <div class="step" id="step-5">
+            <div class="circle"></div>
+            <p>Entregado</p>
+        </div>
+
+        <div class="package-animation">
+            <img src="Paquete.jpg" alt="Paquete" id="package" />
+        </div>
+    </div>
+
+    <div id="finalMessage"></div>
+
+    <footer>
+        <p>© 2024 Seguimiento Futurista</p>
+    </footer>
+
+    <script src="S_producto.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="ScriptIndex.js"></script>
+    
+</body>
+</html>
