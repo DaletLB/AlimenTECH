@@ -1,0 +1,119 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-bottom: 2px solid #00ffea;
+}
+
+.tracking-code-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.tracking-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 10px;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* Barra de progreso */
+.progress-bar {
+    position: absolute;
+    top: 30px; /* Ajusta según necesites */
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    z-index: -1;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background-color: #00e6ff;
+    transition: width 1s ease-in-out;
+}
+
+/* Pasos de seguimiento */
+.step {
+    text-align: center;
+    position: relative;
+    width: 100px;
+}
+
+.step p {
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.step .circle {
+    background-color: #00ffea;
+    border: 3px solid #00e6ff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 0 10px #00ffea, 0 0 20px #00e6ff;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.step.active .circle {
+    background-color: #00e6ff;
+    box-shadow: 0 0 15px #00ffea, 0 0 30px #00e6ff;
+}
+
+/* Animación del paquete */
+.package-animation {
+    position: absolute;
+    top: 70px; /* Asegúrate de que no interfiera */
+    left: 0;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    z-index: 1; /* Mantener por delante de la barra */
+}
+
+.package-animation img {
+    width: 60px; /* Ajusta el tamaño de la imagen */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 2s ease-in-out;
+}
+
+#package.moving {
+    transform: translateX(100%);
+}
+
+/* Mensaje final */
+#finalMessage {
+    text-align: center;
+    color: #00ffea;
+    font-size: 1.2em;
+    margin-top: 20px;
+    visibility: hidden;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #00ffea;
+    color: #00ffea;
+}
