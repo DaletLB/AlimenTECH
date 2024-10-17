@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+</head>
+<body>
+  <h1>Registro de Usuario</h1>
+  <form id="registerForm">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+    
+    <label for="A_paterno">Apellido Paterno:</label>
+    <input type="text" id="A_paterno" name="A_paterno" required><br><br>
+    
+    <label for="A_materno">Apellido Materno:</label>
+    <input type="text" id="A_materno" name="A_materno" required><br><br>
+    
+    <label for="correo">Correo:</label>
+    <input type="email" id="correo" name="correo" required><br><br>
+    
+    <label for="N_contra">Contraseña:</label>
+    <input type="password" id="N_contra" name="N_contra" required><br><br>
+    
+    <button type="submit">Registrar</button>
+  </form>
+
+  <script>
+    // Captura el envío del formulario
+    document.getElementById('registerForm').addEventListener('submit', async function(event) {
+      event.preventDefault();
+
+      const nombre = document.getElementById('nombre').value;
+      const A_paterno = document.getElementById('A_paterno').value;
+      const A_materno = document.getElementById('A_materno').value;
+      const correo = document.getElementById('correo').value;
+      const N_contra = document.getElementById('N_contra').value;
+
+      // Envía los datos al servidor usando fetch
+      const response = await fetch('/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ nombre, A_paterno, A_materno, correo, N_contra })
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        alert('Registro exitoso');
+        // Redirigir al login o a otra página
+        window.location.href = '/';
+      } else {
+        alert('Error al registrar: ' + result.message);
+      }
+    });
+  </script>
+</body>
+</html>

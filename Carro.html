@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Carrito de compras</title>
+		<link rel="stylesheet" href="Carro.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+        <link rel="stylesheet" href="Style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	</head>
+	<body>
+		<header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand">
+                    <img src="Imagenes/Logo.jpg" alt="AlimenTECH" width="105" height="105">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="AlimentaTECH.html">Principal</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Perfil</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <li class="nav-item">
+                          <a class="nav-link" href="InicioSesion.html">Iniciar Sesion</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="Pago.html">Pago</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="Frutas.html">Frutas</a></li>
+                          <li><a class="dropdown-item" href="Verduras.html">Verduras</a></li>
+                          <li><a class="dropdown-item" href="Semillas.html">Semillas</a></li>
+                          <li><a class="dropdown-item" href="Plantas.html">Plantas</a></li>
+                          <li><a class="dropdown-item" href="Fertilizantes.html">Fertilizantes</a></li>
+                          <li><a class="dropdown-item" href="Composta.html">Composta</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#"> ¿Quienes Somos? Conocenos </a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                      <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                    <div class="Btn">
+                        <li class="nav-item">
+                          <a><button onclick="history.back()">Regresar</button></a>
+                        </li>
+                        </div>
+            
+                        
+                  </div>
+                </div>
+              </nav>
+
+			<div class="menu-header">
+				<button id="button-header-favorite">
+					<i class="fa-solid fa-bag-shopping"></i>
+					<span class="counter-favorite">0</span>
+				</button>
+
+			</div>
+
+			<div class="container-list-favorites">
+				<div class="header-favorite">
+					<h3>Por pagar</h3>
+					<i class="fa-solid fa-xmark" id="btn-close"></i>
+				</div>
+				<hr />
+				<div class="list-favorites">
+					<div class="card-favorite">
+						<p class="title">Audífonos Bluetooth Pro</p>
+						<p>$150</p>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="container">
+			<h1>Tienda</h1>
+
+			<div class="container-products">
+				<div class="card-product">
+					<div class="container-img">
+						<img
+							src="Imagenes/Aguacate.png"
+							alt="imagen Producto"
+						/>
+					</div>
+					<div class="content-card-product" data-product-id="1">
+						<h3>Semilla de Aguacate</h3>
+						<p>
+							Aguacate Hass
+						</p>
+						<div class="footer-card-product">
+							<span class="price">$95</span>
+
+							<div class="container-buttons-card">
+								<button class="favorite">
+									<i
+										class="fa-solid fa-bag-shopping"
+										id="favorite-regular"
+									></i>
+									<i
+										class="fa-solid fa-bag-shopping"
+										id="added-favorite"
+									></i>
+								</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-product">
+					<div class="container-img">
+						<img
+							src="Imagenes/Fert4.jpg"
+							alt="imagen Producto"
+						/>
+					</div>
+					<div class="content-card-product" data-product-id="2">
+						<h3>Fertilizante Hesi</h3>
+						<p>Ideal para verduras.</p>
+						<div class="footer-card-product">
+							<span class="price">$300</span>
+
+							<div class="container-buttons-card">
+								<button class="favorite">
+									<i
+										class="fa-solid fa-bag-shopping"
+										id="favorite-regular"
+									></i>
+									<i
+										class="fa-solid fa-bag-shopping"
+										id="added-favorite"
+									></i>
+								</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-product">
+					<div class="container-img">
+						<img
+							src="Imagenes/Lechuga.png"
+							alt="imagen Producto"
+						/>
+					</div>
+					<div class="content-card-product" data-product-id="3">
+						<h3>Semilla de Lechuga</h3>
+						<p>
+							Lechuga Romana
+						</p>
+						<div class="footer-card-product">
+							<span class="price">$150</span>
+
+							<div class="container-buttons-card">
+								<button class="favorite">
+									<i
+										class="fa-solid fa-bag-shopping"
+										id="favorite-regular"
+									></i>
+									<i
+										class="fa-solid fa-bag-shopping"
+										id="added-favorite"
+									></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-product">
+					<div class="container-img">
+						<img
+							src="Imagenes/Mango.jpg"
+							alt="imagen Producto"
+						/>
+					</div>
+					<div class="content-card-product" data-product-id="4">
+						<h3>Semilla de Mango</h3>
+						<p>
+							Mango Manila.
+						</p>
+						<div class="footer-card-product">
+							<span class="price">$70</span>
+
+							<div class="container-buttons-card">
+								<button class="favorite">
+									<i
+										class="fa-solid fa-bag-shopping"
+										id="favorite-regular"
+									></i>
+									<i
+										class="fa-solid fa-bag-shopping"
+										id="added-favorite"
+									></i>
+								</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-product">
+					<div class="container-img">
+						<img
+							src="Imagenes/Tulipan.png"
+							alt="imagen Producto"
+						/>
+					</div>
+					<div class="content-card-product" data-product-id="5">
+						<h3>Semilla de Tulipan</h3>
+						<p>Tulipan Azul</p>
+						<div class="footer-card-product">
+							<span class="price">$99.99</span>
+
+							<div class="container-buttons-card">
+								<button class="favorite">
+									<i
+										class="fa-solid fa-bag-shopping"
+										id="favorite-regular"
+									></i>
+									<i
+										class="fa-solid fa-bag-shopping"
+										id="added-favorite"
+									></i>
+								</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-product">
+					<div class="container-img">
+						<img
+							src="Imagenes/Cactus.png"
+							alt="imagen Producto"
+						/>
+					</div>
+					<div class="content-card-product" data-product-id="6">
+						<h3>Semilla de cactus</h3>
+						<p>
+							Suculenta Jade.
+						</p>
+						<div class="footer-card-product">
+							<span class="price">$50</span>
+
+							<div class="container-buttons-card">
+								<button class="favorite">
+									<i
+										class="fa-solid fa-bag-shopping"
+										id="favorite-regular"
+									></i>
+									<i
+										class="fa-solid fa-bag-shopping"
+										id="added-favorite"
+									></i>
+								</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="Carro.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	</body>
+</html>

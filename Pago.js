@@ -5,7 +5,7 @@ const mp = new MercadoPago('APP_USR-82f8aab2-8326-42c0-a116-6d9485905e49', {
 document.getElementById("btn-pago").addEventListener("click", async () => {
     try {
         const orderData = {
-            title: "Semilla de Sandia",
+            title: "Semilla de Girasol",
             quantity: 1,
             price: 100,
         };
@@ -27,6 +27,51 @@ document.getElementById("btn-pago").addEventListener("click", async () => {
 });
 
 const createCheckoutButton = (preferenceId) => {
+    const bricksBuilder = mp.bricks();
+
+    const renderComponent = async () => {
+        if (window.checkoutButton) window.checkoutButton.unmount();
+        await bricksBuilder.create("wallet", "wallet_container", {
+            initialization: {
+                preferenceId: preferenceId,
+            },
+            customization: {
+                texts: {
+                    valueProp: 'smart_option',
+                },
+            },
+        });
+    };
+
+    renderComponent()
+};
+
+
+document.getElementById("btn-pago1").addEventListener("click", async () => {
+    try {
+        const orderData = {
+            title: "Semilla de Girasol",
+            quantity: 1,
+            price: 100,
+        };
+
+        const response = await fetch("http://localhost:3000/create_preference", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(orderData),
+        });
+
+        const preference = await response.json();
+        createCheckoutButton(preference.id);
+    } catch (error) {
+        alert("Error :(");
+    }
+
+});
+
+ createCheckoutButton = (preferenceId) => {
     const bricksBuilder = mp.bricks();
 
     const renderComponent = async () => {
