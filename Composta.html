@@ -14,6 +14,18 @@
         
         }
         
+        .loader {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #fff url('Imagenes/loadingG.gif') no-repeat center center;
+      z-index: 10;
+    }
+
+    .content {
+      display: none;
+    }
+
         .Btn :hover {
             color:rgb(4, 214, 134) ;
         }
@@ -29,8 +41,9 @@
     color: white;
   }
     </style>
-</head>
-<body>
+    <div class="loader"></div>
+    <div class="content">
+<header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand">
@@ -79,7 +92,10 @@
             </div>
           </div>
         </nav>
-  <br>
+      </head>
+      </header>
+  <body>
+        <br>
   <center>
   <h1>Compostas</h1>
   </center>
@@ -180,7 +196,15 @@
 </div>
 </div>
 </center>
-    
+<script>
+  window.addEventListener('load', function () {
+      setTimeout(function() {
+        document.querySelector('.loader').style.display = 'none';
+        document.querySelector('.content').style.display = 'block';
+      }, 3000); // 3000 milisegundos = 3 segundos
+    });
+</script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+</div>
+    </body>
 </html>
