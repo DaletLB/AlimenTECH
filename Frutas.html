@@ -1,17 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frutas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-     <link rel="stylesheet" href="Style.css">
+    <style>
+        .Btn {
+            font-size: 15px;
+            margin-top: -15px;
+            padding: 20px;
+            color:rgb(255, 255, 255) ;
+            display: block;
+            border-radius: 8px;
+            border-color: white;
+        
+        }
+        
+        .Btn :hover {
+            color:rgb(4, 214, 134) ;
+        }
+        .Videos {
+    width: 380px;
+    height: 410px;
+    background: #774dec;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: px solid #774dec;
+    color: white;
+  }
+            </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand">
-            <img src="Imagenes/Logo.jpg" alt="AlimenTECH" width="105" height="105">
+            <img src="C:\Users\dalet\OneDrive\Escritorio\Servicios Web\LogotipoAlimentech.png" alt="AlimenTECH" width="105" height="105">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,7 +45,7 @@
                 <a class="nav-link active" aria-current="page" href="AlimentaTECH.html">Principal</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Perfil</a>
+                <a class="nav-link" href="#">En Desarrollo</a>
               </li>
               <li class="nav-item dropdown">
                 <li class="nav-item">
@@ -33,107 +56,141 @@
                   Categorias
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Frutas.html">Frutas</a></li>
-                  <li><a class="dropdown-item" href="Verduras.html">Verduras</a></li>
-                  <li><a class="dropdown-item" href="Semillas.html">Semillas</a></li>
-                  <li><a class="dropdown-item" href="Plantas.html">Plantas</a></li>
-                  <li><a class="dropdown-item" href="Fertilizantes.html">Fertilizantes</a></li>
-                  <li><a class="dropdown-item" href="Composta.html">Composta</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">¿Quienes Somos? Conocenos</a></li>
-                </ul>
-              </li>
-              <li class="Btn">
-                <a><button onclick="history.back()">Regresar</button></a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+                    <li><a class="dropdown-item" href="Frutas.html">Frutas</a></li>
+                    <li><a class="dropdown-item" href="Verduras.html">Verduras</a></li>
+                    <li><a class="dropdown-item" href="Semillas.html">Semillas</a></li>
+                    <li><a class="dropdown-item" href="Plantas.html">Plantas</a></li>
+                    <li><a class="dropdown-item" href="Fertilizantes.html">Fertilizantes</a></li>
+                    <li><a class="dropdown-item" href="Composta.html">Composta</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"> ¿Quienes Somos? Conocenos </a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="..." aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+              <div class="Btn">
+                  <li class="nav-item">
+                    <a><button onclick="history.back()">Regresar</button></a>
+                  </li>
+                  </div>
+            </div>
+          </div>
+        </nav>
+  <br>
+  <center>
+  <h1>Frutas</h1>
+  </center>
+  <br>
+  <center>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="https://www.semillascamposeeds.com/wp-content/uploads/2014/01/cerezo_capuli.png" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Cereza</h5>
+            <p class="card-text">Demasiado delicioso.</p>
+      <a href="#" class="btn btn-primary">Adquirir</a>
+      <br>
+            <a href="#" class="btn btn-primary">Tutoriales</a>
           </div>
         </div>
-      </nav>
-
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://t1.uc.ltmcdn.com/es/posts/3/1/8/como_germinar_semillas_de_manzana_paso_a_paso_49813_0_600.webp" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Manzana</h5>
+            <p class="card-text">No comas muchas.</p>
+      <a href="#" class="btn btn-primary">Adquirir</a>
+      <br>
+            <a href="#" class="btn btn-primary">Tutoriales</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/121258333/es/foto/semilla-de-mango-aislado-en-blanco.jpg?s=612x612&w=0&k=20&c=J9TZpwMuIoCI9wwr1m8NnYpXMObgxqhPJFVgZX6b6uU=" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Mango</h5>
+            <p class="card-text">Que rico es el mango.</p>
+      <a href="#" class="btn btn-primary">Adquirir</a>
+      <br>
+            <a href="#" class="btn btn-primary">Tutoriales</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </center>
+    <br>
     <center>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">AlimenTECH</h5>
-        <p class="card-text">Bienvenido a tu lugar de compras favorito, gracias por su preferencia.</p>
-      </div>
-      <img src="Imagenes/FondoFrutas.png" class="card-img-bottom" alt="...">
-    </div>
-  </center>
-  <br>
-  <center>
-  <h1>Semillas</h1>
-  </center>
-  <br>
-  <center>
-    <div class="card-group">
-      <div class="card">
-        <img src="Imagenes/Cerezo.jpg" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Cereza</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <a href="#" class="btn btn-primary">Adquirir</a>
-          <a href="#" class="btn btn-primary">Tutoriales</a>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="https://www.vilmorin-semillas-de-arboles.com/media/pyrus_calleryana__004949900_1142_02032018.jpg" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Pera</h5>
+            <p class="card-text">Deliciosa.</p>
+      <a href="#" class="btn btn-primary">Adquirir</a>
+      <br>
+            <a href="#" class="btn btn-primary">Tutoriales</a>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <img src="Imagenes/Manzana.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Manzana</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Adquirir</a>
-          <a href="#" class="btn btn-primary">Tutoriales</a>
+      <div class="col">
+        <div class="card">
+          <img src="https://st4.depositphotos.com/2370557/19599/i/450/depositphotos_195995942-stock-photo-black-watermelon-seeds-isolated-white.jpg" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Sandia</h5>
+            <p class="card-text">Muy grande, y muy jugosa.</p>
+      <a href="#" class="btn btn-primary">Adquirir</a>
+      <br>
+            <a href="#" class="btn btn-primary">Tutoriales</a>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <img src="Imagenes/Mango.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Mango</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <a href="#" class="btn btn-primary">Adquirir</a>
-          <a href="#" class="btn btn-primary">Tutoriales</a>
+      <div class="col">
+        <div class="card">
+          <img src="https://www.agesectorplatform.org/wp-content/uploads/propiedades-de-las-semillas-de-uva.jpeg" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Uva</h5>
+            <p class="card-text">Buenas, para el año nuevo.</p>
+      <a href="#" class="btn btn-primary">Adquirir</a>
+      <br>
+            <a href="#" class="btn btn-primary">Tutoriales</a>
+          </div>
         </div>
       </div>
-    </div>
-  </center>
-  <br>
-  <center>
-    <div class="card-group">
-      <div class="card">
-        <img src="Imagenes/Pera.jpg" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Pera</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          <a href="#" class="btn btn-primary">Adquirir</a>
-          <a href="#" class="btn btn-primary">Tutoriales</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="Imagenes/Limon.jpg" class="card-img-top" alt="Cempa">
-        <div class="card-body">
-          <h5 class="card-title">Limón</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          <a href="#" class="btn btn-primary">Adquirir</a>
-          <a href="#" class="btn btn-primary">Tutoriales</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="Imagenes/Sandia.jpg" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Sandia</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          <a href="#" class="btn btn-primary">Adquirir</a>
-          <a href="#" class="btn btn-primary">Tutoriales</a>
+    <div class="col">
+        <div class="card">
+          <img src="https://www.healthbenefitstimes.com/9/gallery/orange/Orange-seeds.jpg" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Naranja</h5>
+            <p class="card-text">¿El nombre viene de la fruta o el color?.</p>
+      <a href="#" class="btn btn-primary">Adquirir</a>
+      <br>
+            <a href="#" class="btn btn-primary">Tutoriales</a>
+          </div>
         </div>
       </div>
     </div>
+    </center>
+<br>
+<br>
+<center>
+  <h2>Tal vez estos tutoriales, te pueden servir demasiado.</h2>
+<div class="Videos">
+<div class="card" style="width: 18rem;">
+  <img src="https://i.blogs.es/13d967/1366_20001/1366_2000.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Frutas</h5>
+    <p class="card-text">¿Como tener una fruteria?. Youtube, Buscar</p>
+    <a href="..." class="btn btn-primary">Ir a YouTube</a>
+  </div>
+</div>
+</div>
 </center>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
