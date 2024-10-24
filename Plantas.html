@@ -1,17 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-     <link rel="stylesheet" href="Style.css">
+    <style>
+        .Btn {
+            font-size: 15px;
+            margin-top: -15px;
+            padding: 20px;
+            color:rgb(255, 255, 255) ;
+            display: block;
+            border-radius: 8px;
+            border-color: white;
+        
+        }
+        
+        .Btn :hover {
+            color:rgb(4, 214, 134) ;
+        }
+        .Videos {
+    width: 380px;
+    height: 390px;
+    background: #774dec;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: px solid #774dec;
+    color: white;
+  }
+            </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand">
-            <img src="Imagenes/Logo.jpg" alt="AlimenTECH" width="105" height="105">
+            <img src="C:\Users\dalet\OneDrive\Escritorio\Servicios Web\LogotipoAlimentech.png" alt="AlimenTECH" width="105" height="105">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,7 +45,7 @@
                 <a class="nav-link active" aria-current="page" href="AlimentaTECH.html">Principal</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Perfil</a>
+                <a class="nav-link" href="#">En Desarrollo</a>
               </li>
               <li class="nav-item dropdown">
                 <li class="nav-item">
@@ -33,107 +56,153 @@
                   Categorias
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Frutas.html">Frutas</a></li>
-                  <li><a class="dropdown-item" href="Verduras.html">Verduras</a></li>
-                  <li><a class="dropdown-item" href="Semillas.html">Semillas</a></li>
-                  <li><a class="dropdown-item" href="Plantas.html">Plantas</a></li>
-                  <li><a class="dropdown-item" href="Fertilizantes.html">Fertilizantes</a></li>
-                  <li><a class="dropdown-item" href="Composta.html">Composta</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">¿Quienes Somos? Conocenos</a></li>
-                </ul>
-              </li>
-              <li class="Btn">
-                <a><button onclick="history.back()">Regresar</button></a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+                    <li><a class="dropdown-item" href="Frutas.html">Frutas</a></li>
+                    <li><a class="dropdown-item" href="Verduras.html">Verduras</a></li>
+                    <li><a class="dropdown-item" href="Semillas.html">Semillas</a></li>
+                    <li><a class="dropdown-item" href="Plantas.html">Plantas</a></li>
+                    <li><a class="dropdown-item" href="Fertilizantes.html">Fertilizantes</a></li>
+                    <li><a class="dropdown-item" href="Composta.html">Composta</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"> ¿Quienes Somos? Conocenos </a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+              <div class="Btn">
+                  <li class="nav-item">
+                    <a><button onclick="history.back()">Regresar</button></a>
+                  </li>
+                  </div>
+            </div>
+          </div>
+        </nav>
+  <br>
+  <center>
+  <h1>Plantas</h1>
+  </center>
+  <br>
+  <center>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_778325-MPE49065372363_022022-O.webp" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Rosas</h5>
+            <p class="card-text">Para una bella dama.</p>
+      <a href="#" class="btn btn-primary">Adquirir</a>
+      <br>
+            <a href="#" class="btn btn-primary">Tutoriales</a>
           </div>
         </div>
-      </nav>
-
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://dojiw2m9tvv09.cloudfront.net/78277/product/whatsapp-image-2023-08-03-at-8-04-photoroom-411757.png" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Peonias</h5>
+            <p class="card-text">Que nombre mas raro.</p>
+      <a href="#" class="btn btn-primary">Adquirir</a>
+      <br>
+            <a href="#" class="btn btn-primary">Tutoriales</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://png.pngtree.com/png-clipart/20231014/original/pngtree-tulip-bulbs-bulb-picture-image_13152755.png" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Tulipan</h5>
+            <p class="card-text">Que lindas.</p>
+      <a href="#" class="btn btn-primary">Adquirir</a>
+      <br>
+            <a href="#" class="btn btn-primary">Tutoriales</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </center>
+    <br>
     <center>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">AlimenTECH</h5>
-        <p class="card-text">Bienvenido a tu lugar de compras favorito, gracias por su preferencia.</p>
-      </div>
-      <img src="Imagenes/FondoPlantas.webp" class="card-img-bottom" alt="...">
-    </div>
-  </center>
-  <br>
-  <center>
-  <h1>Semillas</h1>
-  </center>
-  <br>
-  <center>
-    <div class="card-group">
-      <div class="card">
-        <img src="Imagenes/Rosas.webp" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Rosas</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <a href="#" class="btn btn-primary">Adquirir</a>
-          <a href="#" class="btn btn-primary">Tutoriales</a>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="https://sc04.alicdn.com/kf/Hf5ea4073ea0445d1ad6bc174abff5125v.jpg" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Lirio</h5>
+            <p class="card-text">Como el jabon.</p>
+      <a href="#" class="btn btn-primary">Adquirir</a>
+      <br>
+            <a href="#" class="btn btn-primary">Tutoriales</a>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <img src="Imagenes/Girasol.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Girasoles</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Adquirir</a>
-          <a href="#" class="btn btn-primary">Tutoriales</a>
+      <div class="col">
+        <div class="card">
+          <img src="https://sensiseeds.com/blog/wp-content/uploads/2019/12/Hawaiian-baby-woodrose-seeds-1024x683.jpg" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Rosa Hawaiana</h5>
+            <p class="card-text">Ahora que haga el Hula-Hula.</p>
+      <a href="#" class="btn btn-primary">Adquirir</a>
+      <br>
+            <a href="#" class="btn btn-primary">Tutoriales</a>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <img src="Imagenes/Peonias.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Peonias</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <a href="#" class="btn btn-primary">Adquirir</a>
-          <a href="#" class="btn btn-primary">Tutoriales</a>
+      <div class="col">
+        <div class="card">
+          <img src="https://th.bing.com/th/id/OIP.kJ_43Gw0M2bdeepgwDTp4QHaFj?rs=1&pid=ImgDetMain" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Tilo</h5>
+            <p class="card-text">Asi creo que se llama un tio.</p>
+      <a href="#" class="btn btn-primary">Adquirir</a>
+      <br>
+            <a href="#" class="btn btn-primary">Tutoriales</a>
+          </div>
         </div>
       </div>
-    </div>
-  </center>
-  <br>
-  <center>
-    <div class="card-group">
-      <div class="card">
-        <img src="Imagenes/Tulipan.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Tulipan</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          <a href="#" class="btn btn-primary">Adquirir</a>
-          <a href="#" class="btn btn-primary">Tutoriales</a>
+    <div class="col">
+        <div class="card">
+          <img src="https://archivo.infojardin.com/attachments/ab8b07359f701f02aa10cf6a7d170f325337da143357885-jpg.472042/" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Petunias</h5>
+            <p class="card-text">Como mi tia petunia.</p>
+      <a href="#" class="btn btn-primary">Adquirir</a>
+      <br>
+            <a href="#" class="btn btn-primary">Tutoriales</a>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <img src="Imagenes/Lirio.avif" class="card-img-top" alt="Cempa">
-        <div class="card-body">
-          <h5 class="card-title">Lirio</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          <a href="#" class="btn btn-primary">Adquirir</a>
-          <a href="#" class="btn btn-primary">Tutoriales</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="Imagenes/RosaHawaiana.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Rosa Hawaiana</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          <a href="#" class="btn btn-primary">Adquirir</a>
-          <a href="#" class="btn btn-primary">Tutoriales</a>
+    <div class="col">
+        <div class="card">
+          <img src="https://greenforest.com.co/wp-content/uploads/2018/05/Semillas-de-Pino-Japon%C3%A9s-Blanco-1.jpg" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Pino</h5>
+            <p class="card-text">Para epocas navideñas.</p>
+      <a href="#" class="btn btn-primary">Adquirir</a>
+      <br>
+            <a href="#" class="btn btn-primary">Tutoriales</a>
+          </div>
         </div>
       </div>
     </div>
+    </center>
+<br>
+<br>
+<center>
+  <h2>Tal vez estos tutoriales, te pueden servir demasiado.</h2>
+<div class="Videos">
+<div class="card" style="width: 18rem;">
+  <img src="https://i.blogs.es/13d967/1366_20001/1366_2000.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Plantas</h5>
+    <p class="card-text">Te vamos a plantar.</p>
+    <a href="https://www.youtube.com/playlist?list=PLbpc78FF8uP5CPe2uEI2VtE9j6LnLJvqR" class="btn btn-primary">Ir a YouTube</a>
+  </div>
+</div>
+</div>
 </center>
 
     
