@@ -8,10 +8,10 @@ const app = express();
 const port = 5000; 
 
 const pool = new Pool({
-  user: 'postgres',
+  user: 'access_team',
   host: 'localhost',
   database: 'desarolloweb',
-  password: 'root',
+  password: '7Yz!kV2@Pj9#rWQ',
   port: 5432,
 });
 
